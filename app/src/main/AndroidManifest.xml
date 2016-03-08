@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shirley.prueba_interfaces_shirley_santana">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="YEP!"
+        android:supportsRtl="true"
+        android:theme="@style/YepTheme">
+        <activity
+            android:name=".Login"
+            android:label="LoginActivity"
+            android:theme="@style/YepTheme.NoActionBar"
+            android:screenOrientation="portrait"></activity>
+        >
+        <activity
+            android:name=".Splash_Screen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/YepTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Entrar"
+            android:label="@string/title_activity_entrar"
+            android:parentActivityName=".Login"
+            android:theme="@style/YepTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.shirley.prueba_interfaces_shirley_santana.Login" />
+        </activity>
+    </application>
+
+</manifest>

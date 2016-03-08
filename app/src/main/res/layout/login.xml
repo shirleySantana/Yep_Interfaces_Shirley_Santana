@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Login"
+    android:background="@color/accent2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YEP !"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:textSize="35dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DO I KNOW YOU?"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/AuthLinearStyle"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="username"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_below="@+id/editText"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText" />
+    </LinearLayout>
+
+    <Button
+        android:text="Ingresar"
+        android:id="@+id/buttonLogin"
+        style="@style/BotonLoginStyle"
+        android:nestedScrollingEnabled="true"
+        android:onClick="onClickLogin" />
+
+    <TextView
+        android:text="have an account? SIGN UP here!"
+        android:id="@+id/signUpText"
+        style="@style/TextoRegistroStyle" />
+
+</RelativeLayout>
